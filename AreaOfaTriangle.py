@@ -17,7 +17,7 @@ input('Press Enter to Continue:')
 print()
 print('Volume of a Cube:')
 side = float(input('What is the Length of your Side:'))
-unitvolume = input('What is the Unit of the Side')
+unitvolume = input('What is the Unit of the Side:')
 volume = side*side*side
 print("The Volume of the Cube is ",format(volume,'.2f')," ",unitvolume,"^3",sep="" )
 print()
@@ -26,16 +26,17 @@ print('Quadratic Formula:')
 a = float(input('What is the value of a:'))
 b = float(input('What is the value of b:'))
 c = float(input('What is the value of c:'))
+unitquad = input("What is the Units being used:")
 print()
-squareRoot = sqrt(b*b - 4*a*c)
+preroot = (b*b - 4*a*c)
+squareRoot = preroot ** .5
 bplus = -1*b + squareRoot
 bminus = -1*b - squareRoot
 bottom = 2*a
 firstanswer = bplus/bottom
 secondanswer = bminus/bottom
 print()
-print("Here is your First possible answer: x =",format(firstanswer,'.2f'),unitvolume,sep="")
-print("Here is your Second possible answer: x =",format(secondanswer,'.2f'),unitvolume,sep="")
+print("Here is your First possible answer: x =",format(firstanswer,'.2f'),unitquad,sep="")
+print("Here is your Second possible answer: x =",format(secondanswer,'.2f'),unitquad,sep="")
+print()
 print("Goodbye,",name," thank you for using this calculator",sep="")
-
-
